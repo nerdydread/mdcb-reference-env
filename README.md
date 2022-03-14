@@ -1,28 +1,13 @@
-Tyk Gateway Docker
+MDCB Reference Environment
 =================================
-
-This container only contains the Tyk OSS API Gateway, the Tyk Dashboard is provided as a separate container and needs to be configured separately.
+This project runs the Tyk OSS API Gateway in hybrid mode using the Tyk Pump to provide metrics for Prometheus.  Project includes containers for the Tyk Gateway, Tyk Pump, Redis, and Prometheus. This project as is, is intended to be connected to a pre-existing MDCB instance.
 
 
 # Installation
 
 Want to install using only Docker, or want a more advanced guide?  Visit the [Docker install](get-started/install-with-docker.md) page.
 
-## Docker-Compose
-
-With docker-compose, simply run 
-```
-$ docker-compose up -d
-```
-
-[1. Your First API](get-started/your-first-api.md)
-
-[2. Your first token](get-started/your-first-token.md)
-
-[3. Your First Plugin](get-started/your-first-plugin.md)
-
-
-## Hybrid
+## Configuration - Hybrid Setup
 
 If you are setting up a Hybrid cluster, do the following:
 
@@ -58,3 +43,19 @@ To:
 ```
 
 That's it!  Now run `docker-compose up`
+
+## Docker-Compose
+
+With docker-compose, simply run 
+```
+$ docker-compose up -d
+```
+
+[1. Your First API](get-started/your-first-api.md)
+
+[2. Your first token](get-started/your-first-token.md)
+
+[3. Your First Plugin](get-started/your-first-plugin.md)
+
+
+
