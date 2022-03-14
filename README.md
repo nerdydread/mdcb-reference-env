@@ -57,5 +57,7 @@ $ docker-compose up -d
 
 [3. Your First Plugin](get-started/your-first-plugin.md)
 
+## To-Do
 
+- Add Master DC componenents so project can be run locally without the need for an separate environment already running MDCB
 
